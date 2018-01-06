@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Roots >
+  <Roots.Interfaces>
+    <RootInterface FullName="Windows.UI.Xaml.Data.IValueConverter" />
+  </Roots.Interfaces>
+  <Roots.PropertyPathNames>
+    <RootPropertyPathName Name="AvisDuSite" />
+    <RootPropertyPathName Name="DateSortie" />
+    <RootPropertyPathName Name="Duree" />
+    <RootPropertyPathName Name="Realisateur" />
+    <RootPropertyPathName Name="Titre" />
+    <RootPropertyPathName Name="Mail" />
+    <RootPropertyPathName Name="Prenom" />
+    <RootPropertyPathName Name="Nom" />
+    <RootPropertyPathName Name="Pseudo" />
+    <RootPropertyPathName Name="AjoutFilmView" />
+    <RootPropertyPathName Name="NomCategorie" />
+    <RootPropertyPathName Name="GoToGestionFilmsCommand" />
+    <RootPropertyPathName Name="Description" />
+    <RootPropertyPathName Name="CategorieList" />
+    <RootPropertyPathName Name="Categorie" />
+    <RootPropertyPathName Name="GoToMainPageCommand" />
+    <RootPropertyPathName Name="GestionFilmsView" />
+    <RootPropertyPathName Name="GoToRechercherFilmCommand" />
+    <RootPropertyPathName Name="GoToModifierFilmCommand" />
+    <RootPropertyPathName Name="GoToSupprimerFilmCommand" />
+    <RootPropertyPathName Name="GoToAjoutFilmCommand" />
+    <RootPropertyPathName Name="FilmDefini" />
+    <RootPropertyPathName Name="FilmSelection" />
+    <RootPropertyPathName Name="GestionUtilisateursView" />
+    <RootPropertyPathName Name="GoToModifierUtilisateurCommand" />
+    <RootPropertyPathName Name="GoToSupprimerUtilisateurCommand" />
+    <RootPropertyPathName Name="UtilisateurDefini" />
+    <RootPropertyPathName Name="LoginView" />
+    <RootPropertyPathName Name="Mdp" />
+    <RootPropertyPathName Name="MainPage" />
+    <RootPropertyPathName Name="GoToSupportCommand" />
+    <RootPropertyPathName Name="ModifierFilmView" />
+    <RootPropertyPathName Name="GoToGestionFilmsBackCommand" />
+    <RootPropertyPathName Name="SupportView" />
+  </Roots.PropertyPathNames>
+  <Roots.RootTypes>
+    <RootType FullName="Windows.UI.Xaml.Application">
+      <RootProperty Name="RequestedTheme" />
+      <RootProperty Name="Resources" />
+    </RootType>
+    <RootType FullName="MovieTime.ViewModels.ViewModelLocator" />
+    <RootType FullName="MovieTime.Converter.StringFormatConverter" />
+    <RootType FullName="Windows.UI.Xaml.DataTemplate">
+      <RootProperty Name="Template" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Grid">
+      <RootProperty Name="Height" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="ColumnDefinitions" />
+      <RootProperty Name="Children" />
+      <RootProperty Name="Background" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="RowDefinitions" />
+      <RootMethod Name="GetColumn" />
+      <RootMethod Name="SetColumn" />
+      <RootMethod Name="GetRow" />
+      <RootMethod Name="SetRow" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ColumnDefinition" />
+    <RootType FullName="Windows.UI.Xaml.Controls.TextBlock">
+      <RootProperty Name="TextWrapping" />
+      <RootProperty Name="Text" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Name" />
+      <RootProperty Name="FontSize" />
+      <RootProperty Name="Foreground" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Data.Binding">
+      <RootProperty Name="Mode" />
+      <RootProperty Name="Converter" />
+      <RootProperty Name="ConverterParameter" />
+      <RootProperty Name="Source" />
+      <RootProperty Name="Path" />
+    </RootType>
+    <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.StaticResourceExtension" />
+    <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.ThemeResourceExtension" />
+    <RootType FullName="Windows.UI.Xaml.Controls.Page">
+      <RootProperty Name="DataContext" />
+      <RootProperty Name="Content" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ScrollViewer">
+      <RootProperty Name="Content" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.RowDefinition">
+      <RootProperty Name="Height" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Button">
+      <RootProperty Name="Name" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="FontFamily" />
+      <RootProperty Name="Content" />
+      <RootProperty Name="FontSize" />
+      <RootProperty Name="Command" />
+      <RootProperty Name="Foreground" />
+      <RootProperty Name="VerticalAlignment" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.TextBox">
+      <RootProperty Name="FontSize" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Text" />
+      <RootProperty Name="TextWrapping" />
+      <RootProperty Name="PlaceholderText" />
+      <RootProperty Name="Foreground" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ComboBox">
+      <RootProperty Name="FontSize" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="DisplayMemberPath" />
+      <RootProperty Name="ItemsSource" />
+      <RootProperty Name="SelectedItem" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.DatePicker">
+      <RootProperty Name="FontSize" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Date" />
+    </RootType>
+    <RootType FullName="MovieTime.View.AjoutFilmView" />
+    <RootType FullName="Windows.UI.Xaml.Controls.ListView">
+      <RootProperty Name="ItemsSource" />
+      <RootProperty Name="SelectionMode" />
+      <RootProperty Name="ItemTemplate" />
+      <RootProperty Name="SelectedItem" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="VerticalAlignment" />
+    </RootType>
+    <RootType FullName="MovieTime.View.GestionFilmsView" />
+    <RootType FullName="Windows.UI.Xaml.Controls.RelativePanel">
+      <RootProperty Name="Children" />
+      <RootMethod Name="GetAlignLeftWithPanel" />
+      <RootMethod Name="SetAlignLeftWithPanel" />
+      <RootMethod Name="GetRightOf" />
+      <RootMethod Name="SetRightOf" />
+    </RootType>
+    <RootType FullName="MovieTime.View.GestionUtilisateursView" />
+    <RootType FullName="Windows.UI.Xaml.Controls.Image">
+      <RootProperty Name="Source" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Height" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Width" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.StackPanel">
+      <RootProperty Name="Children" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.PasswordBox">
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="FontSize" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Password" />
+    </RootType>
+    <RootType FullName="MovieTime.View.LoginView" />
+    <RootType FullName="MovieTime.View.MainPage" />
+    <RootType FullName="MovieTime.View.ModifierFilmView" />
+    <RootType FullName="MovieTime.View.SupportView" />
+  </Roots.RootTypes>
+</Roots>

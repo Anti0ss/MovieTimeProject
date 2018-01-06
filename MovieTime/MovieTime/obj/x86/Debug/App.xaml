@@ -1,0 +1,53 @@
+﻿<Application
+    x:Class="MovieTime.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:vm="using:MovieTime.ViewModels"
+    xmlns:conv="using:MovieTime.Converter"
+    xmlns:local="using:MovieTime"
+    RequestedTheme="Light">
+
+    <Application.Resources>
+        <vm:ViewModelLocator x:Key="Locator"/>
+        <conv:StringFormatConverter x:Key="StringConverter"></conv:StringFormatConverter>
+
+        <DataTemplate x:Key="UtilisateursTemplate">
+            <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Margin="1" HorizontalAlignment="Stretch">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+
+                <TextBlock Grid.Column="0" HorizontalAlignment="Left" TextWrapping="Wrap" Text="{Binding Pseudo,Mode=TwoWay}" VerticalAlignment="Center"/>
+            <TextBlock Grid.Column="1" HorizontalAlignment="Left" TextWrapping="Wrap" Text="{Binding Nom,Mode=TwoWay}" VerticalAlignment="Center"/>
+            <TextBlock Grid.Column="2" HorizontalAlignment="Left" TextWrapping="Wrap" Text="{Binding Prenom,Mode=TwoWay}" VerticalAlignment="Center"/>
+            <TextBlock Grid.Column="3" HorizontalAlignment="Left" TextWrapping="Wrap" Text="{Binding Mail,Mode=TwoWay}" VerticalAlignment="Center"/>
+         </Grid>
+    </DataTemplate>
+        <DataTemplate x:Key="FilmsTemplate" >
+
+            <Grid Height="50" Width="1000" HorizontalAlignment="Stretch">
+                
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+
+                
+                <TextBlock Grid.Column="0"  TextWrapping="Wrap" Text="{Binding Titre,Mode=TwoWay}" VerticalAlignment="Center"/>
+                <TextBlock Grid.Column="1"  TextWrapping="Wrap" Text="{Binding Realisateur,Mode=TwoWay}" VerticalAlignment="Center"/>
+                <TextBlock Grid.Column="2"  TextWrapping="Wrap" Text="{Binding Duree,Mode=TwoWay}" VerticalAlignment="Center"/>
+                <TextBlock Grid.Column="3"  TextWrapping="Wrap" Text="{Binding DateSortie,Converter={StaticResource StringConverter},ConverterParameter='{}{0:dd MMM yyyy}',Mode=TwoWay}" VerticalAlignment="Center"/>
+                <TextBlock Grid.Column="4"  TextWrapping="Wrap" Text="{Binding AvisDuSite,Mode=TwoWay}" VerticalAlignment="Center"/>
+                
+            </Grid>
+            
+        </DataTemplate>
+    </Application.Resources>
+</Application>
+

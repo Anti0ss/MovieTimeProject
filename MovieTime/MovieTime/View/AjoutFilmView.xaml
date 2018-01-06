@@ -1,0 +1,68 @@
+﻿<Page
+    x:Class="MovieTime.View.AjoutFilmView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MovieTime"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    DataContext="{Binding Source={StaticResource Locator},Path=AjoutFilmView}">
+    <ScrollViewer>
+        <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="2*"/>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="5*" />
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+            <Button Grid.Row="0" Name="BackButton"
+
+                    HorizontalAlignment="Left"
+                    FontFamily="{StaticResource SymbolThemeFontFamily}"
+                    Content="&#xE0C4;"
+                    FontSize="36"
+                    Command="{Binding GoToMainPageCommand}"/>
+            <TextBlock Grid.Row="0" Name="ApplicationTitle"
+
+                       FontSize="50"
+                       HorizontalAlignment="Center"
+                       Foreground="DarkBlue"
+                       VerticalAlignment="Stretch"
+                       Text="MovieTime"
+                       TextWrapping="Wrap"
+                       />
+            <TextBlock Grid.Row="1" FontSize="36" HorizontalAlignment="Center" VerticalAlignment="Stretch" Foreground="Blue" Text="Ajouter un film" TextWrapping="Wrap"/>
+        <TextBlock Grid.Row="2"  x:Name="TitreText" HorizontalAlignment="Left" TextWrapping="Wrap" FontSize="33" Text="Titre du film : " Foreground="Blue" VerticalAlignment="Center"/>
+        <TextBox Grid.Row="3"    x:Name="Titre" FontSize="33" HorizontalAlignment="Stretch"  VerticalAlignment="Center"  Text="{Binding Titre,Mode=TwoWay}" />
+        <TextBlock Grid.Row="4"  x:Name="RealisateurText" HorizontalAlignment="Left" TextWrapping="Wrap" FontSize="33" Text="Realisateur : " Foreground="Blue" VerticalAlignment="Center"/>
+            <TextBox Grid.Row="5"    x:Name="Realisateur" FontSize="33" HorizontalAlignment="Stretch"  VerticalAlignment="Center"  Text="{Binding Realisateur,Mode=TwoWay}" />
+            <TextBlock Grid.Row="6"  x:Name="CatégorieText" HorizontalAlignment="Left" TextWrapping="Wrap" FontSize="33" Text="Catégorie : " Foreground="Blue" VerticalAlignment="Center"/>
+            <ComboBox Grid.Row="7"   x:Name="Catégorie" FontSize="33" HorizontalAlignment="Stretch"  VerticalAlignment="Center" DisplayMemberPath="NomCategorie" ItemsSource="{Binding CategorieList,Mode=TwoWay}" SelectedItem="{Binding Categorie,Mode=TwoWay}" />
+            <TextBlock Grid.Row="8"  x:Name="DureeText" HorizontalAlignment="Left" TextWrapping="Wrap" FontSize="33" Text="Durée : " Foreground="Blue" VerticalAlignment="Center"/>
+            <!--https://stackoverflow.com/questions/841293/where-is-the-wpf-numeric-updown-control  number picker-->
+            <TextBox Grid.Row="9"    x:Name="Duree" FontSize="33" HorizontalAlignment="Stretch"  VerticalAlignment="Stretch"  Text="{Binding Duree,Mode=TwoWay}" />
+            <TextBlock Grid.Row="10"  x:Name="DateText" HorizontalAlignment="Left" TextWrapping="Wrap" FontSize="33" Text="Date de sortie : " Foreground="Blue" VerticalAlignment="Center"/>
+            <DatePicker Grid.Row="11" x:Name="Date" FontSize="33" HorizontalAlignment="Stretch"  VerticalAlignment="Stretch"  Date="{Binding DateSortie,Mode=TwoWay}" />
+            <TextBlock Grid.Row="12"  x:Name="AvisText" HorizontalAlignment="Left" TextWrapping="Wrap" FontSize="33" Text="Avis du site : " Foreground="Blue" VerticalAlignment="Center"/>
+            <!--https://stackoverflow.com/questions/841293/where-is-the-wpf-numeric-updown-control  number picker-->
+            <TextBox Grid.Row="13"   x:Name="Avis" FontSize="33"  HorizontalAlignment="Stretch"  VerticalAlignment="Stretch"  Text="{Binding AvisDuSite,Mode=TwoWay}"  />
+            <TextBlock Grid.Row="14"  x:Name="DescriptionText" HorizontalAlignment="Left" TextWrapping="Wrap" FontSize="33" Text="Description : " Foreground="Blue" VerticalAlignment="Center"/>
+            <TextBox Grid.Row="15"   x:Name="Description" FontSize="33" HorizontalAlignment="Stretch"  VerticalAlignment="Stretch"  Text="{Binding Description,Mode=TwoWay}" />
+            <Button Grid.Row="16" x:Name="AjouterFilm" HorizontalAlignment="Center" Content="Ajouter" FontSize="33" Foreground="Blue" VerticalAlignment="Stretch" Command="{Binding GoToGestionFilmsCommand}"/>
+    </Grid>
+    </ScrollViewer>
+</Page>
